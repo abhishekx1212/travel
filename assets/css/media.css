@@ -1,0 +1,388 @@
+/* @media (max-width:1400px){
+    
+} */
+
+@media (max-width:1200px) {
+    .header .navbar .container .butn-1 {
+        position: absolute;
+        right: 15%;
+        top: 16px;
+    }
+
+    .cab-home .container .cab-r-2 {
+        top: 13%;
+        left: 20px;
+        right: 20px;
+    }
+
+}
+
+@media (max-width:1199px) {
+
+    .recent-search {
+        margin-top: 80px;
+    }
+
+    .download .download-phone {
+        right: 120px;
+        top: -2%;
+    }
+
+    .download .yellow-circle {
+        right: 175px;
+        top: -100px;
+        z-index: 1;
+    }
+
+    .download .blue-circle {
+        right: 42px;
+        bottom: -58px;
+        z-index: 1;
+    }
+
+    .flight-process .first-arrow {
+        top: 88px;
+        left: 24%;
+        width: 180px;
+    }
+
+    .flight-process .second-arrow {
+        top: 79px;
+        right: 24%;
+        width: 180px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .home .home-img .main-img img {
+        height: 400px;
+    }
+
+    .home .container .r-2 .home-form h5 {
+        display: none;
+    }
+
+    .home .container .home-form .row {
+        background: white;
+        padding: 0px 40px 0px 0px;
+    }
+
+    .home .container .home-form .row .search {
+        top: 25%;
+        right: -3%;
+    }
+
+    .home .container .r-2 {
+        left: 3%;
+        right: 3%;
+        top: 100%;
+
+    }
+
+    .offer {
+        margin: 100px 0px 0px 0px;
+    }
+
+    .tour-home .tour-form .col-lg-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .recent-search {
+        margin-top: 90px;
+    }
+
+    /* .flight-home .container .fl-r-2{
+        position: absolute;
+        top: 50%;
+        
+    }  */
+
+}
+
+@media (max-width:991px) {
+
+    .offer {
+        margin: 250px 0px 0px 0px;
+    }
+
+    .header .navbar .container .butn-1 {
+        position: absolute;
+        right: 20%;
+        top: 16px;
+    }
+
+    .recent-search {
+        margin-top: 250px;
+    }
+
+    .cab-home .container .cab-r-2 {
+        top: 75%;
+        left: 35px;
+        right: 35px;
+    }
+
+    .cab-home .tab-content .tab-pane .home-btn-2 {
+        top: 30px;
+        left: 46.5%;
+    }
+
+    .cab-home .tab-content .tab-pane .even-input span {
+        top: -12px;
+        left: 28px;
+    }
+
+    .cab-home .tab-content .tab-pane .even-input select {
+        padding: 12px 0px 12px 20px;
+    }
+
+    .vehicles {
+        margin: 390px 0px 0px 0px;
+    }
+
+    .download .yellow-circle {
+        right: 10px;
+        top: -100px;
+        z-index: 1;
+    }
+
+    .download .blue-circle {
+        right: 10px;
+        bottom: -56px;
+        z-index: 1;
+    }
+
+    /* .flight-home .flight-home-content{
+        height: 750px;
+    } */
+
+    .flight-home .container .fl-r-2 {
+        position: absolute;
+        top: 38%;
+        left: 49px;
+        right: 49px;
+    }
+
+    .flight-offer {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .home .home-img .main-img img {
+        height: 400px;
+    }
+
+    .home .container .r-2 .home-form h5 {
+        display: none;
+    }
+
+    .home .container .home-form .row {
+        background: white;
+    }
+
+    .home .container .home-form .row .search {
+        top: 78%;
+        right: 50%;
+    }
+
+    .home .container .r-2 {
+        left: 5%;
+        right: 5%;
+        top: 100%;
+
+    }
+
+    .offer {
+        margin: 300px 0px 0px 0px;
+    }
+
+    .header .navbar .container .butn-1 {
+        position: absolute;
+        right: 100px;
+        top: 16px;
+    }
+
+
+
+    .tour-home .tour-r2 {
+        left: 25px;
+        right: 25px;
+    }
+
+    .recent-search {
+        margin-top: 250px;
+    }
+
+    .cab-home .container .cab-r-2 {
+        top: 65%;
+        left: 35px;
+        right: 35px;
+    }
+
+    .vehicles {
+        margin: 340px 0px 0px 0px;
+    }
+
+    /* .flight-home .flight-home-content{
+        height: 750px;
+    } */
+
+    .flight-home .container .fl-r-2 {
+        position: absolute;
+        top: 25%;
+        left: 49px;
+        right: 49px;
+    }
+
+    .flight-offer {
+        margin-top: 90px;
+    }
+
+    .flight-process .second-pro {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:767px) {
+    .header .navbar .container .butn-1 {
+        position: absolute;
+        right: 170px;
+        top: 16px;
+    }
+
+    .vehicles {
+        margin: 600px 0px 0px 0px;
+    }
+
+    /* .flight-home .flight-home-content{
+        height: 990px;
+    } */
+
+    .flight-home .container .fl-r-2 {
+        position: absolute;
+        top: 30%;
+        left: 40px;
+        right: 40px;
+    }
+
+    .flight-offer {
+        margin-top: 299px;
+    }
+}
+
+@media (max-width:576px) {
+
+    .home .home-img .main-img img {
+        height: 300px;
+    }
+
+    .home .container .r-2 .home-form h5 {
+        display: none;
+    }
+
+    .home .container .home-form .row {
+        background: white;
+    }
+
+    .home .container .home-form .row .search {
+        top: 78%;
+        right: 43%;
+    }
+
+    .home .container .r-2 {
+        left: 10%;
+        right: 10%;
+        top: 100%;
+
+    }
+
+    .offer {
+        margin: 280px 0px 0px 0px;
+    }
+
+    .logo .row img {
+        width: 100%;
+    }
+
+    .explore .explore-1 img {
+        width: 100%;
+    }
+
+    .home .home-img-content {
+        right: -2%;
+    }
+
+    .header .navbar .container .butn-1 {
+        position: absolute;
+        right: 90px;
+        top: 16px;
+    }
+
+    .cab-home .container .cab-r-2 {
+        top: 55%;
+        left: 40px;
+        right: 40px;
+    }
+
+    .vehicles {
+        margin: 650px 0px 0px 0px;
+    }
+
+    .download .yellow-circle {
+        right: -130px;
+        top: -100px;
+        z-index: 1;
+    }
+
+    /* .flight-home .flight-home-content{
+        height: 990px;
+    } */
+
+    .flight-home .container .fl-r-2 {
+        position: absolute;
+        top: 28%;
+        left: 40px;
+        right: 40px;
+    }
+
+    .flight-offer {
+        margin-top: 340px;
+    }
+
+
+}
+
+@media (max-width:470px) {
+    .blank-space .row {
+        top: 430px;
+        left: 12px;
+        right:12px;
+    }
+
+    .cab-home .container .cab-r-2 {
+        top: 55%;
+        left: 20px;
+        right: 20px;
+    }
+
+}
+
+@media (max-width:375px) {
+    .blank-space .row {
+        top: 488px;
+        left: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width:320px) {
+    .blank-space .row {
+        top: 500px;
+        left: 30px;
+        right: 30px;
+    }
+}
+

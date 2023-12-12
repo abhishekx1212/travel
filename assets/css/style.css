@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* hotel */
+
+/* header */
+.header .navbar1 a .fa-chevron-down {
+    font-size: 12px;
+}
+
+.header .navbar1 a {
+    font-weight: 600;
+}
+
+.header .navbar1 a .bi-three-dots {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.header .navbar-toggler-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.header .navbar2 button {
+    font-weight: 600;
+}
+
+.header .navbar2 ul li a button:hover {
+    background-color: rgba(81, 67, 217, 0.1);
+    color: #5143d9;
+}
+
+/* header end */
+
+/* home */
+.home .home-content h1 {
+    /* font-size: 65px; */
+    font-weight: 750;
+}
+
+.home .home-content p {
+    color: #747579;
+    font-size: 17px;
+}
+
+.home .container .r-2 .home-form h5 {
+    display: block;
+}
+
+.home .container {
+    position: relative;
+}
+
+.home .container .r-2 {
+    position: absolute;
+    top: 70%;
+    left: 0;
+}
+
+.home .container .home-form .row {
+    background: white;
+}
+
+.fill-warning {
+    fill: #f7c32e;
+}
+
+.home .container .home-form .row .search {
+    width: 50px;
+    height: 50px;
+    right: -3%;
+    background-color: #5143d9;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home .fill-primary {
+    fill: #5143d9;
+}
+
+.home .home-img-content {
+    right: -3%;
+    top: -3%;
+}
+
+/* home end */
+
+/* slider-1 */
+.offer .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.offer .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .offer .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* slider-1 end */
+
+/* about */
+.about .about-img .feedback {
+    position: absolute;
+    bottom: 20px;
+    left: 6%;
+
+}
+
+.about .fill-primary {
+    fill: #5143d9;
+}
+
+
+.about .opacity-2 {
+    opacity: 0.2;
+}
+
+/* about end */
+
+/* hotel */
+.hotels .hotel-content .hotel-img {
+    overflow: hidden;
+
+}
+
+.hotels .hotel-content .hotel-img img {
+    transition: .7s ease-in-out;
+}
+
+.hotels .hotel-content img:hover {
+    transform: scale(1.1);
+}
+
+/* hotel end */
+
+/* logo */
+.logo .row img {
+    filter: grayscale(600);
+    transition: .4s ease-in-out;
+}
+
+.logo .row img:hover {
+    filter: grayscale(0);
+}
+
+.logo .row img {
+    width: 83%;
+}
+
+/* logo end */
+
+/* review */
+.review .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.review .swiper-slide {
+    /* text-align: center;
+     font-size: 18px;
+    background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* review end  */
+
+/* explore */
+.explore .explore-1 img {
+    width: 84%;
+}
+
+/* explore end */
+
+/* footer */
+.footer .footer-content-2 ul li a {
+    text-decoration: none;
+}
+
+/* footer end */
+
+/* hotel end */
+
+/* tour */
+
+/* tour-home */
+.tour-home .container {
+    background-image: url(../images/tour-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.tour-home .to-img {
+    position: relative;
+}
+
+.to-img span {
+    color: white;
+    z-index: 1;
+}
+
+.tour-home .to-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    z-index: 0;
+}
+
+/* tour-home end */
+
+/* tour form */
+/* .tour-form form .form-control::placeholder{
+    color: gray;
+    font-weight: 450;
+    font-size: 20px;
+} */
+
+.tour-form form .form-select {
+    border: none;
+    border-bottom: 2px solid #c5c5c7;
+    border-radius: 0px;
+    font-size: 18px;
+    color: gray;
+    font-weight: 450;
+    font-size: 20px;
+}
+
+/* .tour-form form .form-control{
+    border:none;
+    border-bottom: 2px solid #c5c5c7;
+    border-radius: 0px;
+} */
+
+.tour-form .row {
+    background-color: white;
+}
+
+.tour-home .tour-r2 {
+    position: absolute;
+    top: 90%;
+    left: 50px;
+    right: 50px;
+}
+
+.tour-home .tour-form .col-lg-2 {
+    width: 150px;
+    height: 100%;
+}
+
+/* tour form end */
+
+/* packages */
+
+
+.packages .package-content .package-img {
+    overflow: hidden;
+
+}
+
+.packages .package-content .package-img img {
+    transition: .7s ease-in-out;
+}
+
+.packages .package-content:hover img {
+    transform: scale(1.1);
+}
+
+.packages .package-content h5 {
+    transition: .5s ease-in-out;
+}
+
+.packages .package-content:hover h5 {
+    color: #5143d9;
+}
+
+/* packages end */
+
+/* subscribe */
+.subscribe .fill-primary {
+    fill: #5143d9;
+}
+
+/* subscribe end */
+
+/* places-explore */
+.places-explore .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --swiper-navigation-size: 15px;
+}
+
+:root {
+    --swiper-theme-color: white;
+}
+
+.swiper-button-next {
+    right: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.places-content:hover .swiper-button-next {
+    right: 10px;
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    left: 0px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.places-content:hover .swiper-button-prev {
+    left: 10px;
+    opacity: 1;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+/* places-explore-end */
+
+/* tour end */
+
+/* cab */
+
+/*cab-home */
+.cab-home .form-select {
+    --bs-form-select-bg-img: none;
+}
+
+.cab-home .tab-content .tab-pane .home-btn-2 {
+    top: 30px;
+    left: 45.5%;
+}
+
+.cab-home .tab-content .tab-pane .even-input span {
+    top: -12px;
+    right: 28px;
+}
+
+.cab-home .tab-content .tab-pane .even-input select {
+    padding: 12px 15px 12px 0px;
+}
+
+.cab-home .container .cab-r-2 {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    right: 280px;
+}
+
+.bg-orange {
+    background-color: rgba(253, 126, 20, 0.1);
+    color: rgba(253, 126, 20);
+}
+
+/* cab-home-end */
+
+/* .download */
+.download .download-phone {
+    right: 120px;
+    top: -20%;
+    z-index: 99;
+}
+
+.download .yellow-circle {
+    right: 23%;
+    top: -115px;
+    z-index: 1;
+}
+
+.download .blue-circle {
+    right: 4%;
+    bottom: -55px;
+    z-index: 1;
+}
+
+.download .download-star {
+    bottom: 0;
+    left: 0;
+}
+
+.fill-info {
+    fill: #17a2b8;
+}
+
+.fill-primary {
+    fill: #5143d9;
+}
+
+/* download end */
+
+/* accordion */
+
+.accordion {
+    --bs-accordion-bg: #f5f5f6;
+}
+
+
+.accordion-item .accordion-header button {
+    font-weight: 700;
+}
+
+/* accordion-end */
+
+/* cab end */
+
+/* flight */
+
+/* flight home */
+.flight-home .flight-home-content {
+    background-image: url(../images/flight.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 590px;
+}
+
+.flight-home .nav-tabs .nav-link.active {
+    background-color: black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.flight-home .nav-link {
+    color: black;
+    font-weight: 650;
+}
+
+.flight-home .container {
+    position: relative;
+}
+
+.flight-home .container .fl-r-2 {
+    position: absolute;
+    top: 45%;
+    left: 100px;
+    right: 100px;
+}
+
+/* flight home end */
+
+/* destination */
+.destination-content .dest-img img {
+    transition: .6s ease-in-out;
+}
+
+.destination-content:hover .dest-img img {
+    transform: scale(1.1);
+}
+
+.destination-content .destination-rate h5 {
+    transition: .5s ease-in-out;
+}
+
+.destination-content:hover .destination-rate h5 {
+    color: #5143d9;
+}
+
+.dest-img {
+    overflow: hidden;
+}
+
+/* destination end */
+
+/* flight-process */
+.flight-process .first-arrow {
+    top: 80px;
+    left: 26%;
+    width: 180px;
+}
+
+.flight-process .second-arrow {
+    top: 79px;
+    right: 25.5%;
+    width: 180px;
+}
+
+.fill-secondary {
+    fill: #85878a;
+}
+
+.flight-process .second-pro {
+    margin-top: 50px;
+}
+
+/* flight-process-end */
+
+.blank-space .row {
+    z-index: -1;
+    top: 380px;
+    left: 30px;
+    right: 30px;
+}
+
+/* flight end */

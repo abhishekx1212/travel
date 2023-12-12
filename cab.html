@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+    <header class="header pt-2" id="header" style="position: sticky; top: 0; z-index: 999; background-color: white;">
+        <div class="navbar navbar-expand-xl position-relative">
+            <div class="container">
+                <a class="navbar-brand">
+                    <img src="assets/images/logo.svg" alt="" width="130px">
+                </a>
+                <button class="navbar-toggler butn-1" data-bs-toggle="collapse" data-bs-target="#book">
+                    <span class="navbar-toggler-icon" style="font-size: 22px;"></span>
+                </button>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#t-port">
+                    <span class="fa-brands fa-figma" style="font-size: 22px;"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar1" id="book">
+                    <ul class="navbar-nav me-xl-auto mb-2 mb-lg-0">
+                        <li><a href="" class="nav-link ms-lg-3">Listings <i class="fa-solid fa-chevron-down"></i></a>
+                        </li>
+                        <li><a href="" class="nav-link ms-lg-3">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="" class="nav-link ms-lg-3">Accounts <i class="fa-solid fa-chevron-down"></i></a>
+                        </li>
+                        <li><a href="" class="nav-link ms-lg-3"><i class="bi bi-three-dots"></i></a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse navbar2 " id="t-port">
+                    <ul class="navbar-nav ms-xl-5 me-lg-auto mb-2 mb-lg-0 ps-xl-4">
+                        <li>
+                            <a href="index.html" class="nav-link ">
+                                <button class="btn">
+                                    <i class="fa-solid fa-hotel me-2"></i>Hotel
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="flight.html" class="nav-link">
+                                <button class="btn">
+                                    <i class="fa-solid fa-plane me-2"></i>Flight
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tour.html" class="nav-link">
+                                <button class="btn">
+                                    <i class="fa-solid fa-globe-americas me-2"></i>Tour
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">
+                                <button class="btn" style="background-color: rgba(81, 67, 217, 0.1); color: #5143d9;">
+                                    <i class="fa-solid fa-car me-2"></i>Cab
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="">
+                            <a href="" class="nav-link ">
+                                <button class="btn" style="background-color: #f5f5f6;">
+                                    <i class="bi bi-bell fa-fw"></i>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link ">
+                                <img src="assets/images/01.jpg" alt="" width="38px" class="rounded">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="cab-home">
+        <div class="container py-lg-5 position-relative">
+            <div class="row justify-content-lg-end justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cab-home-img">
+                        <img src="assets/images/cab-home.jpg" alt="" width="100%" class="rounded-4">
+                    </div>
+                </div>
+            </div>
+            <div class="row px-md-3 cab-r-2">
+                <div class="col-lg-7">
+                    <div class="cab-home-content card rounded-4 border-0 shadow">
+                        <div class="card-header py-3 rounded-top-4" style="background-color: white;">
+                            <h5 style="font-size: 22px;" class="fw-bold ms-3">Book your online cab</h5>
+                        </div>
+                        <ul class="nav nav-tabs border-0 mt-3 mb-2 ms-2">
+                            <li class="nav-item">
+                                <button class="nav-link active border-0" data-bs-toggle="tab" data-bs-target="#one-way">
+                                    <div class="butn-1">
+                                        <input type="radio" class="form-check-input" id="oneway" name="flexRadioDefault"
+                                            checked>
+                                        <label class="form-check-label" for="oneway"
+                                            style="color: #0b0a12; opacity: 0.5; font-weight:500;">One way</label>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link border-0" data-bs-toggle="tab" data-bs-target="#round-trip">
+                                    <div class="butn-2">
+                                        <input type="radio" class="form-check-input" id="roundtrip"
+                                            name="flexRadioDefault">
+                                        <label class="form-check-label" for="roundtrip"
+                                            style="color: #0b0a12; opacity: 0.5; font-weight:500;">Round Trip</label>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content px-4" style="width: 100%;">
+                            <div class="tab-pane fade show active" id="one-way" style="width: 100%;">
+                                <div class="row gy-4 pt-4 pb-4 align-items-center position-relative">
+                                    <div class="home-btn-2 btn d-none d-md-block rounded-circle position-absolute"
+                                        style="background-color: black; width:40px; height:40px; z-index: 3;">
+                                        <span class="text-white" style="background-color: black; font-size:17px;"><i
+                                                class="fa-solid fa-right-left"></i></span>
+                                    </div>
+                                    <div class="col-md-6 position-relative">
+                                        <select name="" class="form-select border-secondary border-2 form-control" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px; padding:12px 0px 12px 20px;">
+                                            <option value="1">Select location</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:-12px; left:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Pickup</span>
+                                    </div>
+                                    <div class="col-md-6 position-relative even-input">
+                                        <select name=""
+                                            class="form-select border-secondary border-2 form-control text-lg-end" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px;">
+                                            <option value="1">Select location</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="font-size:16px; color: rgba(95, 90, 90, 0.555);">Drop</span>
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 pt-2 position-relative">
+                                        <select name="" class="form-select border-secondary border-2 form-control" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px; padding:12px 0px 12px 20px;">
+                                            <option value="1">Select Date</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:0px; left:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Pickup
+                                            Date</span>
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 pt-2 even-input position-relative">
+                                        <select name=""
+                                            class="form-select border-secondary border-2 form-control text-lg-end" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px;">
+                                            <option value="1">Select Time</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:0px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Pickup
+                                            time</span>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="home-cab-btn btn bg-dark" style="width: 100%;">
+                                            <span class="text-white fw-semibold" style="font-size:17px;">Search
+                                                Cabs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="round-trip" style="width: 100%;">
+                                <div class="row gy-4 pt-4 pb-4 align-items-center position-relative">
+                                    <div class="home-btn-2 btn d-none d-md-block rounded-circle position-absolute"
+                                        style="background-color: black; width:40px; height:40px; z-index: 3;">
+                                        <span class="text-white" style="background-color: black; font-size:17px;"><i
+                                                class="fa-solid fa-right-left"></i></span>
+                                    </div>
+                                    <div class="col-md-6 position-relative">
+                                        <select name="" class="form-select border-secondary border-2 form-control" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px; padding:12px 0px 12px 20px;">
+                                            <option value="1">Select location</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:-12px; left:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Pickup</span>
+                                    </div>
+                                    <div class="col-md-6 position-relative even-input">
+                                        <select name=""
+                                            class="form-select border-secondary border-2 form-control text-lg-end" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px;">
+                                            <option value="1">Select location</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="font-size:16px; color: rgba(95, 90, 90, 0.555);">Drop</span>
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 pt-2 position-relative">
+                                        <select name="" class="form-select border-secondary border-2 form-control" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px; padding:12px 0px 12px 20px;">
+                                            <option value="1">Select Date</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:0px; left:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Pickup
+                                            Date</span>
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 pt-2 even-input position-relative">
+                                        <select name=""
+                                            class="form-select border-secondary border-2 form-control text-lg-end" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px;">
+                                            <option value="1">Select Time</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:0px; right:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Pickup
+                                            time</span>
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 pt-2 position-relative">
+                                        <select name="" class="form-select border-secondary border-2 form-control" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px; padding:12px 0px 12px 20px;">
+                                            <option value="1">Select Date</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:0px; left:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Return
+                                            Date</span>
+                                    </div>
+                                    <div class="col-md-6 pt-md-3 pt-2 even-input position-relative">
+                                        <select name=""
+                                            class="form-select border-secondary border-2 form-control text-lg-end" id=""
+                                            style="color: #0b0a12; opacity: 0.5; font-weight: 550; font-size:19px;">
+                                            <option value="1">Select Time</option>
+                                            <option value="2">Thailand</option>
+                                            <option value="3">Nepal</option>
+                                            <option value="4">Russia</option>
+                                        </select>
+                                        <span class="position-absolute bg-white px-2"
+                                            style="top:0px; right:28px; font-size:16px; color: rgba(95, 90, 90, 0.555);">Return
+                                            time</span>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <div class="home-cab-btn btn bg-dark" style="width: 100%;">
+                                            <span class="text-white fw-semibold" style="font-size:17px;">Search
+                                                Cabs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blank-space position-relative d-block d-sm-none" id="blank-space">
+        <div class="container">
+            <div class="row position-absolute rounded-4">
+                <div class="col-12">
+                    <div class="blank-space-img">
+                        <img src="assets/images/vc-cab.jpg" alt="" width="100%" class="rounded-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vehicles py-4" id="vehicles">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center display-4">
+                        Our Awesome Vehicles
+                    </h1>
+                </div>
+            </div>
+            <div class="row gy-4 pt-2">
+                <div class="col-xl-2 col-sm-4">
+                    <div class=" card border-0 shadow text-center rounded-4">
+                        <div class="vehicle-align pt-4 pb-3 d-flex justify-content-center">
+                            <div class="vehicle-img d-flex justify-content-center align-items-center rounded-circle"
+                                style="width:116px; height: 116px; background-color:#f5f5f6;">
+                                <img src="assets/images/car-1.svg" alt="" width="100px">
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Sedan</h4>
+                        <span style="color: gray; font-size: 17px;" class="pb-5 fw-semibold">(6 cars)</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4">
+                    <div class=" card border-0 shadow text-center rounded-4">
+                        <div class="vehicle-align pt-4 pb-3 d-flex justify-content-center">
+                            <div class="vehicle-img d-flex justify-content-center align-items-center rounded-circle"
+                                style="width:116px; height: 116px; background-color:#f5f5f6;">
+                                <img src="assets/images/car-2.svg" alt="" width="100px">
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Micro</h4>
+                        <span style="color: gray; font-size: 17px;" class="pb-5 fw-semibold">(6 cars)</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4">
+                    <div class=" card border-0 shadow text-center rounded-4">
+                        <div class="vehicle-align pt-4 pb-3 d-flex justify-content-center">
+                            <div class="vehicle-img d-flex justify-content-center align-items-center rounded-circle"
+                                style="width:116px; height: 116px; background-color:#f5f5f6;">
+                                <img src="assets/images/car-3.svg" alt="" width="100px">
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">CUV</h4>
+                        <span style="color: gray; font-size: 17px;" class="pb-5 fw-semibold">(6 cars)</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4">
+                    <div class=" card border-0 shadow text-center rounded-4">
+                        <div class="vehicle-align pt-4 pb-3 d-flex justify-content-center">
+                            <div class="vehicle-img d-flex justify-content-center align-items-center rounded-circle"
+                                style="width:116px; height: 116px; background-color:#f5f5f6;">
+                                <img src="assets/images/car-4.svg" alt="" width="100px">
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">SUV</h4>
+                        <span style="color: gray; font-size: 17px;" class="pb-5 fw-semibold">(6 cars)</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4">
+                    <div class=" card border-0 shadow text-center rounded-4">
+                        <div class="vehicle-align pt-4 pb-3 d-flex justify-content-center">
+                            <div class="vehicle-img d-flex justify-content-center align-items-center rounded-circle"
+                                style="width:116px; height: 116px; background-color:#f5f5f6;">
+                                <img src="assets/images/car-5.svg" alt="" width="100px">
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Pick up</h4>
+                        <span style="color: gray; font-size: 17px;" class="pb-5 fw-semibold">(6 cars)</span>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-4">
+                    <div class=" card border-0 shadow text-center rounded-4">
+                        <div class="vehicle-align pt-4 pb-3 d-flex justify-content-center">
+                            <div class="vehicle-img d-flex justify-content-center align-items-center rounded-circle"
+                                style="width:116px; height: 116px; background-color:#f5f5f6;">
+                                <img src="assets/images/car-6.svg" alt="" width="100px">
+                            </div>
+                        </div>
+                        <h4 class="fw-bold">Coupe</h4>
+                        <span style="color: gray; font-size: 17px;" class="pb-5 fw-semibold">(6 cars)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cab-about pb-lg-5 pb-4 " id="cab-about">
+        <div class="container py-4 py-md-5">
+            <div class="row gy-4">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center display-4">
+                        Why Choose Us
+                    </h1>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cab-about-content card ps-4 pe-5 border-0 rounded-4 shadow">
+                        <div class="cab-about-icon bg-primary mt-4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-circle"
+                            style="width:60px; height: 60px;">
+                            <i class="bi bi-lightning-fill fs-5 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-4" style="font-size:21px;">Advance Booking</h5>
+                        <p style="color: gray;">
+                            Happiness prosperous impression had conviction For every delay in they Extremity now.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cab-about-content card ps-4 pe-5 border-0 rounded-4 shadow">
+                        <div class="cab-about-icon bg-success mt-4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-circle"
+                            style="width:60px; height: 60px;">
+                            <i class="fa-solid fa-leaf text-success fs-5"></i>
+                        </div>
+                        <h5 class="fw-bold mt-4" style="font-size:21px;">Economical Trip</h5>
+                        <p style="color: gray;">
+                            Extremity now strangers contained breakfast him discourse additions Sincerity.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cab-about-content card ps-4 pe-5 border-0 rounded-4 shadow">
+                        <div class="cab-about-icon bg-warning mt-4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-circle"
+                            style="width:60px; height: 60px;">
+                            <i class="bi bi-life-preserver fs-5 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mt-4" style="font-size:21px;">Secure and Safer</h5>
+                        <p style="color: gray;">
+                            Perpetual extremity now strangers contained breakfast him discourse additions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cab-about-content card ps-4 pe-5 border-0 rounded-4 shadow">
+                        <div class="cab-about-icon bg-danger mt-4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-circle"
+                            style="width:60px; height: 60px;">
+                            <i class="fa-solid fa-car fs-5 text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold mt-4" style="font-size:21px;">Vehicle Options</h5>
+                        <p style="color: gray;">
+                            The Prosperous impression had conviction For every delay in they Extremity now.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cab-about-content card ps-4 pe-5 border-0 rounded-4 shadow">
+                        <div class="cab-about-icon bg-orange mt-4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-circle"
+                            style="width:60px; height: 60px;">
+                            <i class="fa-solid fa-wifi fs-5 bg-orange"></i>
+                        </div>
+                        <h5 class="fw-bold mt-4" style="font-size:21px;">Cab Entertainment</h5>
+                        <p style="color: gray;">
+                            Extremity now strangers contained breakfast him discourse additions Sincerity.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="cab-about-content card ps-4 pe-5 border-0 rounded-4 shadow">
+                        <div class="cab-about-icon bg-info mt-4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-circle"
+                            style="width:60px; height: 60px;">
+                            <i class="fa-solid fa-wheelchair fs-5 text-info"></i>
+                        </div>
+                        <h5 class="fw-bold mt-4" style="font-size:21px;">Polite Driver</h5>
+                        <p style="color: gray;">
+                            Perpetual extremity now strangers contained breakfast him discourse additions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download py-lg-5 px-md-4 px-2" id="download">
+        <div class="container rounded-4 position-relative" style="background-color: #f5f5f6;">
+            <div class="download-phone position-absolute d-none d-lg-block">
+                <img src="assets/images/mobile.png" alt="" width="175px">
+            </div>
+            <div class="download-star position-absolute">
+                <svg class="fill-primary" width="77px" height="77px">
+                    <path
+                        d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="row py-4 p-sm-5 position-relative" style="overflow: hidden;">
+                <div class="yellow-circle text-center position-absolute d-none d-md-block" style="width: 220px;">
+                    <svg class="fill-warning" width="191.7px" height="211px" viewBox="0 0 191.7 211">
+                        <path
+                            d="M183.4,105.8c0-0.8-0.1-1.4-0.2-2c-0.2-1-0.5-2-0.8-3c-0.3-1.5-1-2.9-1.5-4.3c-0.2-0.5-0.3-1-0.6-1.4 c-0.3-0.4-0.5-0.9-0.7-1.4c0-0.1-0.1-0.2-0.3-0.1c0.1,0.2,0,0.4,0.2,0.7c0.5,1.1,0.9,2.2,1.3,3.3c0.5,1.2,0.8,2.4,1.2,3.6 c0.2,0.7,0.4,1.3,0.6,2C182.7,104,182.8,104.9,183.4,105.8 M120.9,62.4c0.3,0,0.5,0.3,0.8,0.2c0.4-0.1,0.6-0.4,1-0.6 c0.5-0.3,0.6-0.7,0.6-1.2c0-0.4,0.3-0.3,0.5-0.4c0-0.8,0-1.6-0.8-2.2C122.4,59.6,121.1,60.7,120.9,62.4 M148.7,166.5 c-1.9,0.9-5.9,4.1-6.5,5.8c0.5-0.3,1.1-0.4,1.2-1c0.1-0.2,0.4-0.4,0.6-0.6c0.2-0.3,0.6,0,0.9-0.3c0.2-0.3,0.7-0.5,0.9-0.8 c0.2-0.5,0.7-0.5,1-0.8c0.2-0.3,0.5-0.7,0.9-0.8c0.4-0.2,0.4-0.7,0.9-0.7c0.5,0,0.4-0.7,0.8-0.6c0.4-0.5,1.1-0.7,1.5-1.2 c0.1-0.2,0.2-0.3,0-0.5c-0.5,0.1-0.9,0.5-1.3,0.8c-0.3,0-0.4-0.4-0.7-0.2c0,0-0.1,0-0.1,0.1C148.7,165.8,148.7,166.1,148.7,166.5  M159,171.3c-1.2,0.4-1.8,1.5-2.8,2.1c-1,0.6-1.9,1.4-2.9,2.2c-1,0.8-1.9,1.6-2.8,2.4c0.2,0.1,0.4,0.1,0.6,0 c0.7-0.7,1.8-0.6,2.3-1.5c0.7,0,1-0.6,1.4-0.9c0.3-0.3,0.7-0.4,1-0.4c0.3-0.5,0.6-0.8,1-1c0.4-0.2,0.6-0.7,1.1-0.8 c-0.3-0.7-0.3-0.7,0.7-1c0-0.2-0.3-0.2-0.2-0.5C158.6,171.7,158.8,171.5,159,171.3 M127.8,135.8c1.4-1.9,2.6-3.9,3.7-5.9 c1.3-2.5,2.5-5,3.8-7.4c0.1-0.3,0.2-0.5,0-0.8c-2.7,4.5-5,9.1-7.4,13.6C127.7,135.4,127.8,135.6,127.8,135.8 M38.9,72.2 c-0.4,0.4-0.8,0.8-1.2,1.2c-0.3,0.4-0.8,0.7-1.1,1.1c-0.5,0.5-0.8,1.2-1.3,1.7c-1,1-1.9,2.1-2.8,3.2c-1.4,1.7-2.4,3.7-3.6,5.6 c-0.3,0.4-0.5,0.9-0.7,1.4c3.7-4.5,6.8-9.5,10.8-13.8C39.1,72.5,39,72.3,38.9,72.2 M94.1,198.1c0.1,0.4,0.1,0.6,0.2,0.8 c-0.6,0-0.2,0.9-0.9,1c-0.7,0-1.4-0.1-2.2,0.2c-0.4,0.1-0.3,0.3-0.2,0.5c0.6,0,1.2,0.1,1.6-0.3c0.3,0.1,0.1,0.4,0.4,0.5 c0.8,0,1.6,0.2,2.3,0c0.8-0.3,1.5-0.1,2.2-0.2c0.8,0,1.5,0,2.3,0c0.2,0,0.4,0,0.6,0c0.1,0,0.1-0.1,0.2-0.1c0-0.2,0.1-0.4,0-0.6 c-0.7,0.3-0.7,0.2-1.2-0.2c-0.3-0.2,0-0.4,0-0.5c-0.1-0.4-0.6-0.2-0.9-0.4c-0.2-0.1,0.2-0.5-0.2-0.6c-0.2,0.4,0.2,0.9-0.4,1.2 c-0.6-0.3-0.6-0.3-1.1,0.4c0,0.3,0.5,0,0.5,0.4c-0.3,0-0.6,0.2-0.7-0.3c0-0.2-0.5-0.3-0.6-0.4c-0.3,0-0.3,0.3-0.5,0.2 c-0.3-0.2-0.3-0.6-0.5-0.8c0.1-0.2,0.4-0.3,0.4-0.5c-0.4-0.2-0.5,0.3-0.8,0.2C94.4,198.4,94.3,198.3,94.1,198.1 M101.9,167.3 c0-0.9,0.6-1.5,0.8-2.3c0.2-1,0.6-2,0.8-2.9c0.2-0.8,0.5-1.7,0.6-2.5c0.2-0.9,0.5-1.7,0.7-2.6c0.2-0.9,0.4-1.8,0.7-2.7 c0.2-0.5,0.4-1,0.5-1.5c0.1-0.6,0.2-1.2,0.5-1.7c0.3-0.5,0-1.3,0.7-1.7c0.2-0.1,0.1-0.4,0-0.6c0-0.1-0.2-0.2-0.1-0.3 c0.5-0.5,0.3-1.2,0.6-1.8c-0.2,0-0.4,0-0.5,0.3c-0.4,1.3-0.9,2.6-1.4,3.9c-0.1,0.5-0.4,0.9-0.3,1.4c-0.6,1-0.7,2.1-0.9,3.1 c-0.2,1.1-0.6,2.1-0.8,3.2c-0.6,2.3-1.1,4.7-1.9,7C102.1,166.1,101.4,166.6,101.9,167.3 M23.2,154c-0.1-0.3-0.2-0.6-0.4-0.8 c-0.1-0.1-0.3-0.1-0.4-0.3c-0.3-1.1-0.6-2.1-1-3.1c-0.2-0.5-0.3-1.1-0.7-1.5c-1.1-1.2-2.1-2.4-3.2-3.7c-0.1-0.1-0.3-0.2-0.3-0.4 c0-0.3-0.3-0.4-0.4-0.5c-0.1-0.1-0.2-0.4-0.6-0.4c0.7,1.7,1.6,3.2,2.5,4.7c0.9,1.4,1.7,2.9,2.7,4.2c0.4,0.6,0.8,1.3,1.1,2 c0,0.1,0.2,0.1,0.2,0.2C23,154.2,23.1,154.1,23.2,154 M90.5,85.8c0.5-0.1,0.4-0.6,0.7-0.8c0.3-0.2,0.5-0.6,0.8-0.9 c0.9-1.2,1.8-2.4,2.8-3.6c0.7-0.9,1.4-1.7,2-2.6c0.6-0.9,1.4-1.7,1.9-2.6c0.5-0.9,1.4-1.5,1.7-2.5c-0.6-0.4-1-0.4-1.5,0.1 c-0.7,0.8-1.3,1.7-1.9,2.5c-0.4,0.6-0.8,1.2-1.2,1.8c-0.9,1.1-1.6,2.3-2.4,3.5c-0.9,1.4-1.8,2.9-2.8,4.3 C90.5,85.3,90.4,85.5,90.5,85.8 M140.6,176.1c0.5-0.5,1.1-0.7,1.7-1c0.7-0.4,1.3-0.8,1.9-1.2c0.3-0.1,0.2-0.6,0.6-0.5 c0.6-1.2,1.7-1.9,2.8-2.7c0.1,0.1,0.3,0.2,0.4,0.3c0.1-0.1,0.2-0.2,0.3-0.3c-0.1-0.1-0.2-0.2-0.2-0.3c0.2-0.3,0.6,0.1,0.7-0.3 c-0.1-0.1-0.3-0.1-0.4-0.2c0-0.7,0-0.7,0.7-0.9c0.1,0,0.2-0.1,0.2-0.2c0-0.2-0.2-0.3-0.2-0.4c0.1-0.3,0.7-0.4,0.4-0.8 c-0.8,0.3-1.2,0.9-1.8,1.4c-0.7,0.5-1.4,1-2,1.6c-0.6,0.6-1.2,1.1-1.9,1.6c-0.7,0.6-1.5,1.1-2.2,1.7c-0.2,0.2-0.4,0.6-0.7,0.7 c-0.4,0.1-0.6,0.4-0.8,0.6c-0.3,0.3-0.5,0.5-0.8,0.8C139.7,176.4,140.2,175.5,140.6,176.1 M130.5,206.4c0.2,0.2,0.5,0.1,0.7,0 c1-0.4,2-0.7,3-1.1c1.8-0.6,3.5-1.4,5.2-2.2c2.9-1.3,5.8-2.8,8.5-4.4c1.2-0.7,2.3-1.4,3.5-2.2c1.2-0.8,2.4-1.7,3.6-2.6 c1.2-0.8,2.2-1.7,3.3-2.6c0.9-0.7,1.7-1.6,2.7-2.2c0.2-0.1,0.4-0.3,0.5-0.5c0.2-0.2,0.4-0.3,0.5-0.5c-0.3-0.2-0.4,0-0.5,0.1 c-0.5,0.6-1.1,1-1.7,1.4c-1.4,1-2.7,2.2-4.1,3.2c-0.7,0.6-1.5,1.2-2.2,1.7c-1.8,1.1-3.4,2.3-5.2,3.3c-2.4,1.4-4.8,2.7-7.2,4.1 c-0.6,0.3-1.2,0.4-1.8,0.7c-1.2,0.7-2.5,1.3-3.8,1.8c-1,0.3-1.9,0.9-2.9,1.2C131.8,205.8,131.1,206,130.5,206.4 M10.6,79.8 c0.1-0.1,0.3-0.3,0.4-0.4c-0.3-0.2-0.3-0.5-0.4-0.8c0.2-0.5,0.8,0.1,0.9-0.5c-0.1-0.2-0.4,0-0.5-0.3c-0.1-0.4,0.2-0.7,0.4-1 c0.2-0.1,0.4,0.1,0.6-0.1c-0.2-0.3-0.4-0.5-0.1-0.8c0.4-0.6,0.6-1.5,1.2-1.9c0.2-0.2,0.1-0.5,0.4-0.7c-0.2-0.6,0.3-1,0.5-1.4 c0.8-1.4,1.6-2.8,2.4-4.1c1.2-1.8,2.3-3.5,3.6-5.2c0.9-1.1,1.7-2.4,2.8-3.4c0.2-0.2,0.2-0.3,0-0.4c-4.4,3.8-7.5,8.7-10,13.9 c-0.2-0.2-0.3-0.3-0.5-0.2c-0.2,0.4-0.3,0.8-0.6,1.2c-0.3,0.5-0.3,0.8,0,1.2c-0.2,0.5-0.5,0.9-0.6,1.2c-0.2,0-0.5,0-0.5,0.1 c-0.3,0.6-0.8,1.1-0.6,1.8c-0.5,0-0.5,0.5-0.7,0.7c0.2,0.4-0.6,0.7-0.1,1.2c0.3,0.4,0.1,0.7-0.3,0.9c-0.1-0.1-0.1-0.1-0.2-0.2 c0,0.4-0.5,0.5-0.3,0.9c0.2,0.2,0.3-0.3,0.5,0C8.6,82,8.4,82.7,8,83.3c-0.2,0.4-0.2,0.7-0.1,1.1c0.3-0.5,0.3-1,0.9-1.2 c-0.2-0.2-0.4-0.3-0.1-0.6c0.2-0.3,0.5-0.2,0.8-0.3c0.1,0,0.1-0.1,0.1-0.2c-0.1-0.1-0.3-0.1-0.5-0.2c0.5-0.9,0.8-1.8,1.4-2.6 C10.5,79.6,10.5,79.7,10.6,79.8 M21.4,74.7c0.9-0.5,1.3-1.4,2-2c0.5-0.5,1-1.2,1.5-1.8c0.5-0.7,1.1-1.2,1.6-1.9 c0.7-1,1.5-1.9,2.3-2.8c0.2-0.2,0.5-0.4,0.7-0.7c0.3-0.7,1-1.1,1.5-1.7c0.5-0.6,0.8-1.3,1.4-1.7c0.2-0.1,0.4-0.1,0.5-0.4 c0.7-1,1.8-1.7,2.4-2.8c0.5-0.1,0.5-0.6,0.8-0.9c0.3-0.3,0.6-0.6,0.9-0.9c-0.6-0.3-0.7,0.3-1,0.4c-1.2,0.7-2.3,1.5-3.4,2.5 c-2,1.8-3.8,3.9-5.5,6c-0.4,0.5-0.9,1-1.3,1.5c-1.3,1.8-2.6,3.7-3.9,5.6C21.8,73.6,21.6,74,21.4,74.7 M65.2,30.8 c-0.5-0.4-0.8-0.2-1.1,0.1v0.8c-0.7,0-0.6,1-1.2,1.3c-0.6,0.2-1,0.8-1.4,1.3c0.1,0.3,0.5,0.1,0.6,0.4c0.4-0.4,0.7-0.9,1.3-0.8v-0.6 c0.5-0.1,0.8-0.5,1.1-0.8c0.3-0.3,0.9-0.3,0.9-0.9c0.6,0.1,0.6-0.6,1-0.8c0.4-0.2,0.7-0.6,1-0.9c0.3-0.3,0.6-0.8,0.9-1.1 c0.3-0.3,0.5-0.7,0.9-1c0.4-0.3,0.9-0.4,1-0.9c0.2-0.5,0.6-0.7,1-0.9c-0.2-0.8,0.4-0.8,1-0.9c-0.1-0.1-0.2-0.2-0.2-0.2 c0-0.3,0.3-0.1,0.4-0.3c0.2-0.5,0.5-1.1,1-1.4c0.6-0.3,0.8-0.9,1.3-1.3c1.7-1.7,3.4-3.3,5.2-4.9c0.1-0.1,0.2-0.3,0.4-0.3 c0.8-0.2,1.2-0.8,1.8-1.3c0.6-0.5,1.2-1.1,1.8-1.5c1-0.6,1.9-1.2,2.7-2c0.2,0.1,0.2,0.2,0.3,0.2c0.5-0.4,0.8-1,1.3-1.1 c0.6-0.1,0.8-0.6,1.4-1c-1.2,0.1-1.2,0.1-1.8,0.7c-0.4-0.3-0.8,0.3-1.2,0c-0.1,0.4,0,1-0.8,1c-0.1,0-0.3,0.1-0.3,0.2 c-0.3,0.8-1.1,1-1.7,1.4c-0.5,0.4-1,0.8-1.6,0.6c-0.3,0.6-0.6,1-1.1,1.2c-0.1-0.1-0.2-0.2-0.3-0.3c-0.1,0.3-0.3,0.6-0.4,0.9 c-0.4,0-0.8,0.2-1.1,0.4v0.5c-0.4,0.1-0.6,0.3-0.8,0.6c-0.2,0.2-0.6,0.2-0.7,0.7c-0.1,0.3-0.5,0.5-0.7,0.8c-0.3,0.1-0.6-0.1-0.9,0.1 c0.2,0.1,0.4,0.1,0.7,0.3c-0.7,0-0.7,0.5-0.9,0.8c-0.5,0.4-0.9,0.9-1.4,1.4c0.2,0.5-0.5,0.2-0.5,0.6c0,0.5-0.6,0-0.7,0.4 c0.1,0.1,0.1,0.2,0.1,0.1c-0.6,0.6-1.1,1.1-1.7,1.7c-0.1,0.2-0.2-0.3-0.4-0.1c-0.3,0.3,0.6,0.5,0.1,0.8c-0.2,0-0.2-0.3-0.4-0.1 c-0.1,0.2,0.1,0.5-0.2,0.7c-0.1-0.2-0.3-0.3-0.4-0.3C70,25,70,25.1,70,25.2c0,0.5-0.1,1-0.7,1.2c0,0.5-0.5,0.5-0.8,0.8 c-0.2,0.3-0.6,0.5-0.8,0.9C67.1,29.1,66,29.8,65.2,30.8 M1.2,100.8c-0.3-0.2-0.3-0.6-0.2-0.9c0.6-1.7,0.8-3.5,1.3-5.2 C2.6,93.9,2.8,93,3,92c0.1-0.8,0.5-1.4,0.6-2.2C3.7,89,4,88.2,4.2,87.4c0.2-0.7,0.5-1.3,0.7-2c0.3-1,0.6-2,1-3 c0.2-0.6,0.4-1.3,0.8-1.8c0.1-0.1,0.1-0.3,0.1-0.4c0.2-0.6,0.4-1.2,0.7-1.8c0.6-1.2,1.1-2.5,1.7-3.7c0.5-0.9,0.9-1.8,1.3-2.6 c0.4-0.8,0.8-1.7,1.3-2.5c1-1.9,2.2-3.8,3.5-5.6c1-1.4,2.1-2.7,3.2-4c0.9-1.1,1.8-2.1,2.9-3c0.8-0.7,1.6-1.6,2.5-2.2 c0.8-0.6,1.7-1.3,2.5-1.9c1.9-1.4,3.9-2.8,5.9-4.1c1.2-0.8,2.4-1.5,3.6-2.3c1.4-0.9,2.8-1.6,4.2-2.5c0.8-0.5,1.7-1,2.6-1.4 c0.8-0.5,1.7-0.8,2.5-1.3c0.8-0.5,1.7-0.9,2.5-1.3c0.8-0.4,1.5-1,2.5-1.1c0.4-0.7,1.2-0.7,1.8-1c0.6-0.3,1.2-0.6,1.8-1 c0.6-0.4,1.2-0.7,1.8-1.1c1.2-0.7,2.3-1.5,3.5-2.2c0.7-0.4,1.2-1.1,1.9-1.5c1.3-0.9,2.4-2,3.5-3.1c0.4-0.5,0.9-0.9,1.4-1.2 c0.4-0.2,0.4-0.7,0.8-1c0.6-0.5,1-1,1.6-1.5c0.2-0.2,0.3-0.3,0.3-0.6c0.3,0,0.4,0,0.6-0.1c0.2-0.2-0.1-0.2-0.1-0.3 c0.2-0.2,0.3-0.5,0.7-0.6c0.3-0.1,0.3-0.5,0.5-0.7c0.6-0.4,0.7-1.3,1.5-1.5c0.2-0.7,0.8-1.1,1.2-1.7c0.2-0.3,0.5-0.5,0.8-0.6 c0.3-0.1,0.1-0.7,0.6-0.6c0.5-1.1,1.6-1.6,2.4-2.3c1.4-1.2,2.6-2.4,4.2-3.4c0.8-0.5,1.5-1.2,2.2-1.7c1.8-1.1,3.5-2.3,5.4-3.2 c0.8-0.4,1.5-0.9,2.3-1.3c1.7-0.8,3.3-1.5,5.1-2.2c0.3-0.1,0.6-0.3,1-0.2c0.4,0.1,0.6-0.4,0.9-0.5c0.4-0.1,0.9-0.1,1.3-0.3 c0.2-0.1,0.7-0.2,1-0.3c0.9-0.5,2-0.4,2.9-0.9c0.3-0.2,0.8-0.1,1.1-0.1c1.2-0.1,2.4-0.7,3.6-0.6c0.7,0,1.3-0.1,1.9-0.4 c0.2-0.1,0.4-0.2,0.6-0.1c0.6,0.2,1.1,0,1.6,0c0.6,0,1.1-0.3,1.7-0.2c0.6,0,1.3,0.2,1.8,0c1-0.3,2-0.2,3-0.2c0.5,0,1-0.2,1.5,0.2 c0.2,0.2,0.5-0.5,0.8-0.1c0.2,0.2,0.5,0.2,0.7,0c0.3-0.1,0.6,0.3,0.8,0.1c0.2-0.2,0.6-0.4,0.7-0.2c0.2,0.4,0.6-0.1,0.7,0.2 c0,0,0.1,0,0.1,0c1.1-0.1,2.1,0.3,3.2,0.3c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,1.2,0.3,1.8,0.4c1,0.2,2,0.6,3,0.8c0.3,0,0.3,0.7,0.8,0.3 c0.2,0.4,0.6,0.1,0.9,0.2c0.2,0.1,0.4,0.3,0.6,0.5c0.6-0.1,1.1,0.2,1.7,0.4c1.1,0.4,2.2,0.9,3.3,1.5c1.4,0.8,2.9,1.5,4.1,2.8 c0.2,0.3,0.5,0,0.8,0.2c1.3,1.2,2.8,2.2,3.9,3.6c0.5,0.6,1.2,1,1.7,1.6c1,1.2,2.1,2.3,3,3.6c0.5,0.8,1.1,1.6,1.7,2.4 c1.1,1.7,2.1,3.4,2.8,5.3c0.5,1.4,1,2.8,1.4,4.3c0.1,0.5,0.1,1,0.2,1.5c0.2,0.5,0.2,0.9,0.2,1.4c0,0.4,0.3,0.6,0.3,1 c-0.1,0.3-0.1,0.7,0.2,1c0.1,0.2,0,0.5,0,0.8c0,0.4,0.1,0.8,0,1.2c-0.1,0.3,0.4,0.6,0,0.9c0.4,0.3,0.2,0.7,0.2,1.1 c0,0.4,0,0.7,0,1.1v1.2c0,0.4-0.1,0.8,0,1.1c0.2,0.6,0.1,1.3,0.2,1.9c0.1,0.7,0.1,1.5,0,2.2c0,0.6,0.4,1.2,0.3,1.9 c-0.1,0.6-0.2,1.3,0,1.9c0.2,0.7,0,1.4,0.3,2c0.3,0.7,0,1.4,0.2,2c0.4,1.4,0.4,2.8,0.8,4.2c0.5,1.7,0.7,3.5,1.3,5.2 c0.4,1.1,0.8,2.2,1.1,3.3c0.4,1.1,0.9,2.1,1.5,3.2c0.7,1.3,1.5,2.5,2.4,3.6c0.9,1.2,1.9,2.2,2.8,3.3c0.4,0.5,0.9,1,1.3,1.5 c0.4,0.6,1.1,1,1.5,1.6c1.1,1.5,2.5,2.6,3.5,4.2c1.7,1.6,2.7,3.6,4.1,5.4c0.7,0.9,1.2,1.9,1.7,2.9c1,1.6,1.8,3.3,2.6,5 c0.8,1.6,1.4,3.2,1.9,4.8c0.4,1.2,0.7,2.4,1.1,3.6c0.2,0.5-0.1,1,0.3,1.4c0,1.1,0.6,2.2,0.5,3.3c0.4,0.7,0.3,1.4,0.2,2.1 c0,0.5,0.4,0.9,0.3,1.5c-0.1,0.5-0.2,1.1,0,1.6c0.3,0.8,0.2,1.7,0.2,2.5c0,1.9,0,3.8,0,5.7c0,0.6,0.2,1.3-0.1,1.9 c-0.3,0.5,0.1,1.2-0.3,1.7c-0.1,0.2,0.2,0.3,0.2,0.6c-0.1,0.5,0.2,1.1-0.2,1.6c-0.3,0.4,0.1,1-0.3,1.5c-0.2,0.3,0.6,0.7,0,1 c0.1,0.7-0.1,1.3-0.2,2c-0.1,0.5,0.2,1.1-0.2,1.6c-0.3,0.5,0.2,1.1-0.3,1.6c0.2,0.8-0.3,1.5-0.3,2.3c0,0.6-0.2,1.2-0.3,1.8 c-0.2,0.9-0.4,1.9-0.6,2.8c-0.1,0.3-0.2,0.7-0.3,1c-0.1,0.2-0.3,0.3-0.3,0.5c0,1.5-0.5,2.9-1,4.3c-0.3,0.8-0.5,1.7-0.9,2.6 c-0.1,0.2-0.1,0.6-0.3,0.8c-0.5,0.6-0.7,1.4-0.9,2.2c-0.1,0.4-0.3,0.8-0.5,1.1c0,0.1-0.2,0.1-0.2,0.2c0,1.1-0.7,1.9-1.1,2.8 c-0.4,0.9-1,1.7-1.3,2.6c-0.8,1.8-1.9,3.4-2.7,5.2c-0.3,0.6-0.7,1.1-0.9,1.5c-0.1,0.4,0.2,0.4,0.2,0.8c-0.1,0.3-0.3,0.4-0.7,0.5 c0.2,0.9-0.5,1.5-0.9,2.1c-0.9,1.6-1.9,3.1-3,4.6c-0.7,1-1.4,2-2.2,2.9c-2.6,2.9-5.3,5.6-8.1,8.3c-1.1,1-2.1,2.1-3.3,3 c-1,0.8-1.9,1.7-2.9,2.4c-2.3,1.8-4.7,3.5-7.1,5.1c-1.9,1.2-3.8,2.3-5.8,3.4c-1.2,0.7-2.5,1.4-3.8,1.9c-2.1,1-4.2,1.9-6.3,2.7 c-2,0.8-4.1,1.2-6.1,2.1c-1.3,0-2.5,0.8-3.8,0.8c-0.6,0.4-1.3,0.3-1.9,0.4c-0.6,0.1-1.3,0.4-2,0.3c-0.3,0-0.6,0.3-1,0.2 c-0.3-0.1-0.7-0.1-1,0.2c-0.3-0.4-0.5,0.2-0.8,0.1c-0.3-0.1-0.8-0.1-1.1,0c-0.8,0.3-1.6,0-2.3,0.3c-0.8,0.3-1.5,0-2.2,0.2 c-0.9,0.3-1.7-0.2-2.5,0c-0.1,0-0.2-0.1-0.3-0.2c-0.2,0.1-0.1,0.3-0.2,0.4c-0.3-0.2-0.5-0.4-0.8-0.4c-0.3-0.1-0.7,0-1.2,0 c-0.2,0.2-0.4,0.5-0.6,0.8c-0.5-0.1-0.9,0.1-1.3-0.2c-0.2-0.1-0.6,0.1-0.9,0.1c-0.4,0.1-0.8-0.4-1.1-0.2c-0.4,0.3-0.8,0.2-1.2,0.2 c-3.5,0-7.1,0-10.6,0c-0.4,0-0.8,0.2-1.1-0.2c-0.4,0.6-0.7-0.1-1.1,0c-0.4,0.1-0.7-0.1-1.1-0.2c-0.6-0.2-1.4,0-2.1-0.1 c-0.5,0-0.9,0.1-1.4-0.2c-0.4-0.2-0.9-0.1-1.4-0.2c-0.6-0.1-1.2-0.3-1.8-0.3c-0.4,0-0.8,0-1.3-0.2c-0.3-0.2-0.8,0.1-1.1-0.3 c-0.8,0-1.6-0.3-2.4-0.5c-1.9-0.4-3.7-1-5.6-1.6c-1.5-0.5-3.1-1-4.6-1.6c-0.5-0.2-1-0.4-1.5-0.6c-1.7-0.8-3.5-1.5-5.1-2.4 c-1.4-0.8-2.9-1.6-4.3-2.5c-0.7-0.5-1.6-0.8-2.4-1.3c-1.8-1.1-3.7-2.2-5.4-3.4c-1.5-1.1-3.1-2.1-4.4-3.4c-0.3-0.4-0.8-0.6-1.2-0.9 c-0.4-0.4-0.8-0.9-1.2-1.2c-0.6-0.4-1.1-1-1.6-1.4c-0.4-0.3-0.4-1-1.1-1.2c-0.5-0.1-0.5-0.9-1.1-1.1c-0.2-0.8-1-0.9-1.4-1.6 c-0.4-0.7-1-1.1-1.6-1.7c-0.5-0.5-1.2-1-1.6-1.7c-0.9-1.1-2-2-2.8-3.1c-0.8-1-1.9-1.9-2.5-3.1c-0.1-0.3-0.4-0.2-0.6-0.3 c-0.2-0.2-0.1-0.4-0.3-0.6c-0.7-0.7-1.3-1.4-2-2.2c-0.9-1.1-1.7-2.2-2.6-3.3c-1.4-1.7-2.6-3.5-3.8-5.3c-0.8-1.2-1.5-2.4-2.3-3.6 c-0.9-1.4-1.7-2.8-2.6-4.2c-0.6-1.1-1.2-2.2-1.8-3.3c-0.5-0.9-1-1.7-1.5-2.5c-0.7-1.2-1.4-2.3-2.1-3.5c-1-1.6-1.9-3.3-2.8-5.1 c-0.4-0.9-0.8-1.8-1.2-2.7c-0.2-0.6-0.4-1.2-0.7-1.8c-0.6-1.1-0.8-2.4-1.2-3.5c-0.1-0.4-0.2-0.8-0.3-1.2c-0.1-0.4-0.2-0.7-0.2-1.1 c-0.2-1.1-0.2-2.3-0.7-3.4c0-0.1,0-0.2,0-0.2c0.1-1.3-0.4-2.5-0.3-3.8c0.1-1.1-0.4-2.3-0.2-3.4c-0.4-0.7-0.1-1.4-0.3-2.1 c-0.4-1.8-0.2-3.7-0.2-5.5c0-1.8,0-3.7,0-5.5c0-1.3,0.3-2.5,0.5-3.8c0-0.3,0.2-0.6,0.2-0.9C0.7,101.7,0.9,101.2,1.2,100.8">
+                        </path>
+                    </svg>
+                </div>
+                <div class="blue-circle text-center position-absolute d-none d-md-block" style="width: 220px;">
+                    <svg class="fill-info" width="189.7px" height="182.4px" viewBox="0 0 189.7 182.4">
+                        <path
+                            d="M27.2,37.9c-1.9,1.4-3.2,2.6-4,4.4c-0.2,0.5-0.5,1,0.1,1.4c0.3,0.2,1.1,0,1.1,0C24.5,41.4,28.1,41.2,27.2,37.9 M159.4,152.4c0.3,0.2,0.5,0.4,0.8,0.7c3.5-2.6,6.5-5.7,8.8-9.4c-1.7,1.2-3,2.8-4.5,4.2C162.8,149.5,161.1,150.9,159.4,152.4 M58.2,69.6c3.4-5.2,7.7-9.9,9.5-15.9C62.7,57.9,60.6,63.8,58.2,69.6 M133.9,106.2c-3.2,4-7.8,7.2-8.4,13 C129.3,115.5,132.8,111.6,133.9,106.2 M31.5,33.9c7.9-6.7,17-11.9,24.2-19.6C46.5,19.6,37.9,25.4,31.5,33.9 M154.5,109.5 c-7.4,9.6-14.7,18.9-21.9,28.2C146.6,125.7,153.4,116.8,154.5,109.5 M34.4,70.2c0.4-0.2,0.9-0.4,1-0.7C39,59,46.4,51.4,54.4,44 c4-3.6,6.6-8.5,10.1-13.8C53.4,33.8,34.8,59,34.4,70.2 M86.4,182.4c-42.1-0.7-70.8-24.4-82.7-62.1c-6.8-21.6-3.9-42.6,6-62.4 c9.9-20,24.7-36,44.9-46.3C62.9,7.3,72,4.2,80.8,0.8c3.5-1.3,7.1-1,10.8,0.3c4.6,1.6,9.5,2.3,14.4,2.2c10.8-0.4,20.4,3.1,29.3,8.6 c6,3.7,12.5,6.7,17.9,11.4c16.7,14.6,28.3,32.5,34.9,53.6c2.5,8,1.6,16.1,0.8,24.2c-0.4,4.6-2.3,9.2-3,13.7c-0.6,3.5-3.4,6-3.2,8.3 c0.3,3.5-1.1,5.7-2.5,8.1c-13.2,22.9-34,35.9-58.4,44c-8.7,2.9-17.4,5.3-26.4,6.6C91.9,182.3,88.3,182.3,86.4,182.4">
+                        </path>
+                    </svg>
+                </div>
+                <div class="col-lg-7" style="z-index: 3;">
+                    <div class="download-content ">
+                        <h3 style="font-size: 2.3rem; font-weight: 700; line-height:1.25;  font-family: 'poppins', sans-serif;"
+                            class="mb-4">
+                            Download our app and access exclusive features
+                        </h3>
+                        <ul class="list-inline position-relative mb-4">
+                            <li class="list-inline-item me-3"> <i
+                                    class="bi bi-patch-check-fill text-success me-1"></i>24/7 Customer Support</li>
+                            <li class="list-inline-item me-3"> <i
+                                    class="bi bi-patch-check-fill text-success me-1"></i>Ride Safely</li>
+                            <li class="list-inline-item"> <i class="bi bi-patch-check-fill text-success me-1"></i>Top
+                                Rated Driver - Partner</li>
+                        </ul>
+                        <div class="download-store" style="display: flex; flex-direction:row; align-items: center;">
+                            <a href="">
+                                <img src="assets/images/gplay.svg" alt="" width="130px" height="50px">
+                            </a>
+                            <a href="" class="ms-3">
+                                <img src="assets/images/app-store.svg" alt="" width="130px" height="50px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cab-accordian pt-3 pb-5" id="cab-accordian">
+        <div class="container">
+            <div class="row justify-content-center gy-3">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center display-4">
+                        Frequently Asked Questions
+                    </h1>
+                </div>
+                <div class="col-lg-8">
+                    <div class="accordion rounded-4" id="acord">
+                        <div class="accordion-item border-0 rounded-4">
+                            <h2 class="accordion-header ">
+                                <button class="accordion-button rounded-4" data-bs-toggle="collapse"
+                                    data-bs-target="#acrd-1">
+                                    How Does it Work?
+                                </button>
+                            </h2>
+                            <div id="acrd-1" class="accordion-collapse collapse show" data-bs-parent="#acord">
+                                <div class="accordion-body" style="background-color: white;">
+                                    Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
+                                    men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
+                                    Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
+                                    again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
+                                    admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
+                                    warrant of Norland arrived.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mt-3 rounded-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded-4" data-bs-toggle="collapse"
+                                    data-bs-target="#acrd-2">
+                                    What are monthly tracked users?
+                                </button>
+                            </h2>
+                            <div id="acrd-2" class="accordion-collapse collapse" data-bs-parent="#acord">
+                                <div class="accordion-body" style="background-color: white;">
+                                    Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
+                                    men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
+                                    Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
+                                    again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
+                                    admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
+                                    warrant of Norland arrived.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mt-3 rounded-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded-4" data-bs-toggle="collapse"
+                                    data-bs-target="#acrd-3">
+                                    What if I go with my prepaid monthly
+                                </button>
+                            </h2>
+                            <div id="acrd-3" class="accordion-collapse collapse" data-bs-parent="#acord">
+                                <div class="accordion-body" style="background-color: white;">
+                                    Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
+                                    men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
+                                    Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
+                                    again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
+                                    admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
+                                    warrant of Norland arrived.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mt-3 rounded-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded-4" data-bs-toggle="collapse"
+                                    data-bs-target="#acrd-4">
+                                    What's the difference between cabs and taxi
+                                </button>
+                            </h2>
+                            <div id="acrd-4" class="accordion-collapse collapse" data-bs-parent="#acord">
+                                <div class="accordion-body" style="background-color: white;">
+                                    Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
+                                    men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
+                                    Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
+                                    again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
+                                    admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
+                                    warrant of Norland arrived.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mt-3 rounded-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded-4" data-bs-toggle="collapse"
+                                    data-bs-target="#acrd-5">
+                                    How can I check the fare for my Booking ride?
+                                </button>
+                            </h2>
+                            <div id="acrd-5" class="accordion-collapse collapse" data-bs-parent="#acord">
+                                <div class="accordion-body" style="background-color: white;">
+                                    Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
+                                    men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
+                                    Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
+                                    again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
+                                    admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
+                                    warrant of Norland arrived.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mt-3 rounded-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded-4" data-bs-toggle="collapse"
+                                    data-bs-target="#acrd-6">
+                                    Do and Don'ts - Tips for a Safe Trip
+                                </button>
+                            </h2>
+                            <div id="acrd-6" class="accordion-collapse collapse" data-bs-parent="#acord">
+                                <div class="accordion-body" style="background-color: white;">
+                                    Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
+                                    men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
+                                    Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
+                                    again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
+                                    admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
+                                    warrant of Norland arrived.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="logo pt-md-4 pb-5" id="logo">
+        <div class="container">
+            <div class="row g-4 g-lg-7 align-items-center justify-content-center">
+                <div class="col-xl-2 col-sm-3 col-5">
+                    <img src="assets/images/logo1.svg" alt="">
+                </div>
+                <div class="col-xl-2 col-sm-3 col-5">
+                    <img src="assets/images/log2.svg" alt="">
+                </div>
+                <div class="col-xl-2 col-sm-3 col-5">
+                    <img src="assets/images/log3.svg" alt="">
+                </div>
+                <div class="col-xl-2 col-sm-3 col-5">
+                    <img src="assets/images/log4.svg" alt="">
+                </div>
+                <div class="col-xl-2 col-sm-3 col-5">
+                    <img src="assets/images/log5.svg" alt="">
+                </div>
+                <div class="col-xl-2 col-sm-3 col-5">
+                    <img src="assets/images/log6.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="footer" style="background-color: rgba(11, 10, 18); opacity: 1;">
+        <div class="container py-5">
+            <div class="row align-items-first baseine justify-content-lg-between justify-content-center">
+                <div class="col-lg-3 px-5">
+                    <div class="footer-content">
+                        <img src="assets/images/logo-white.svg" alt="" width="140px">
+                        <p class="mt-3" style="color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 450;">
+                            Departure defective arranging rapturous did believe him all had supported.
+                        </p>
+                        <span class="d-block mb-2"
+                            style="color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 450;"><i
+                                class="bi bi-telephone me-2"></i>+1234 568 963</span>
+                        <span class="d-block" style="color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 450;"><i
+                                class="bi bi-envelope me-2"></i>example@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-4 mt-lg-0">
+                    <div class="footer-content-2">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="page gy-4 text-start">
+                                    <ul>
+                                        <li>
+                                            <h4 class=""
+                                                style="color:rgba(255, 255, 255); opacity: 1; font-weight:650;">
+                                                Page
+                                            </h4>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">About
+                                                us</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Contact
+                                                us</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">News
+                                                and Blog</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Meet
+                                                a Team</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="page gy-4 text-start">
+                                    <ul>
+                                        <li>
+                                            <h4 class=""
+                                                style="color:rgba(255, 255, 255); opacity: 1; font-weight:650;">
+                                                Link
+                                            </h4>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Sign
+                                                up</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Sign
+                                                in</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Privacy
+                                                Policy</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Terms</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Support</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Cookie</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="page gy-4 text-start">
+                                    <ul>
+                                        <li>
+                                            <h4 class=""
+                                                style="color:rgba(255, 255, 255); opacity: 1; font-weight:650;">
+                                                Global site
+                                            </h4>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">India</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">California</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Indonesia</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Canada</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Malaysia</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="page gy-4 text-start">
+                                    <ul>
+                                        <li>
+                                            <h4 class=""
+                                                style="color:rgba(255, 255, 255); opacity: 1; font-weight:650;">
+                                                Booking
+                                            </h4>
+                                        </li>
+                                        <li class="mt-4">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Hotels</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Flight</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Tour</a>
+                                        </li>
+                                        <li class="mt-2">
+                                            <a href=""
+                                                style="font-size: 17px; color:rgba(255, 255, 255,0.75); opacity: 1; font-weight: 400;">Cabs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
